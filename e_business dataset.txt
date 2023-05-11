@@ -1,0 +1,196 @@
+Customer's Table									
+Customer_id	First_name	Last_name	Gender	birth_date	Phone	Email	Address	City	State
+BH1	James       	 Okafor      	M	1990-05-16	8031234567	jamesokafor@gmail.com             	 34, Allen Avenue                 	 Lagos          	LA
+BH2	Ada         	 Mohammed    	F	1988-11-30	7021234567	adamo@gmail.com                   	 15, Adeniran Ogunsanya Street    	Onitsha	AN
+BH3	Femi        	 Adesina     	M	1984-02-14	8171234567	femadesina@yahoo.com              	 12, Kudirat Abiola Way           	 Ikeja          	LA
+BH4	Blessing    	 Ogunleye    	F	1979-08-21	9081234567	blessingogunleye@outlook.com      	 7, Umaru Shinkafi Close          	 Abuja          	FC
+BH5	Chinedu     	 Okonkwo     	M	1995-06-10	8051234567	chineduokonkwo@hotmail.com        	 21, Obafemi Awolowo Way          	 Enugu          	EN
+BH6	Toluwani    	 Oni         	F	1986-12-27	8121234567	emmanueladebayo@gmail.com         	 18, Opebi Road                   	 Lagos          	LA
+BH7	Chiamaka    	 Adeyemi     	F	1982-04-18	8071234567	hannahwilliams@yahoo.com.ng       	 6, Oluwole Close                 	 Ibadan         	OY
+BH8	Emmanuel    	 Okoye       	M	1978-09-02	9031234567	abigailakinwunmi@gmail.com        	 55, Oyewole Road                 	 Abeokuta       	OG
+BH9	Fatima      	 Abdullahi   	F	1992-07-19	8151234567	ibrahimabdullahi@outlook.com      	 22, Oladipo Diya Street          	 Abuja          	FC
+BH10	Chidi       	 Eze         	M	1981-03-07	7081234567	adeyemijohnson@hotmail.com        	 3, Ogunbiyi Close                	 Lagos          	LA
+BH11	Aisha       	 Ibrahim     	F	1989-10-23	8021234567	oliviaoladele@yahoo.com.ng        	 10, Oshodi-Apapa Expressway      	 Lagos          	LA
+BH12	David       	 Oyedepo     	M	1975-11-11	9021234567	chidinmaonuoha@gmail.com          	 8, Uzoamaka Street               	 Owerri         	IM
+BH13	Adewale     	 Akinfenwa   	M	1993-04-30	8181234567	mikeokoye@yahoo.com               	 17, Ahmadu Bello Way             	 Kaduna         	KD
+BH14	Oluwatosin  	 Olumide     	F	1973-12-22	7031234567	nkemdilimnwosu@hotmail.com        	 9, Fajuyi Road                   	 Ado-Ekiti     	EK
+BH15	Ayomide     	 Akande      	M	1991-01-08	8061234567	ogechiokoro@gmail.com             	 12, Oba Adebimpe Road            	 Akure          	ON
+BH16	Uche        	 Nwosu       	M	1980-08-15	8101234567	emekaiwuagwu@yahoo.com            	 14, Murtala Mohammed Highway     	 Calabar        	CR
+BH17	Ibrahim     	 Aliyu       	M	1987-09-03	9011234567	oluwatobifashina@hotmail.com      	 16, Oshin Road                   	 Ijebu-Ode      	OG
+BH18	Grace       	 Ezeani      	F	1977-05-29	8041234567	adebayoadewale@gmail.com          	 7, Adelabu Street                	 Ibadan         	OY
+BH19	Toyin       	 Adebayo     	F	1994-03-25	7071234567	graceokeke@outlook.com            	 3, Samuel Adesujo Close          	 Abuja          	FC
+BH20	Segun       	 Ogundipe    	M	1983-06-07	8131234567	davidokonkwo@yahoo.com.ng         	 24, Bank Anthony Way             	 Lagos          	LA
+	
+	
+	orders table					
+order_Id	order_date	Customer_id (fk)	shipping_address	Status	Shipped_date
+1	2023-05-01	BH6	 18, Opebi Road , Lagos                 	4	
+2	2023-11-03	BH3	 12, Kudirat Abiola Way, Ikeja          	1	
+3	2023-01-07	BH1	 34, Allen Avenue , Lagos               	2	2023-01-08
+4	2023-02-17	BH4	 7, Umaru Shinkafi Close,Abuja          	4	
+5	2023-08-02	BH8	 55, Oyewole Road,  Abeokuta           	2	2023-08-04
+6	2023-01-28	BH7	 6, Oluwole Close , Ibadan               	3	2023-01-30
+7	2023-03-22	BH10	 3, Ogunbiyi Close, lagos               	2	2023-03-23
+8	2023-03-30	BH2	 15, Adeniran Ogunsanya Street, lagos    	2	2023-04-01
+9	2023-02-19	BH5	 21, Obafemi Awolowo Way, enugu          	4	
+10	2023-01-13	BH9	 22, Oladipo Diya Street, abuja       	4	
+11	2023-01-26	BH19	 3, Samuel Adesujo Close, abuja          	1	
+12	2023-02-25	BH16	 14, Murtala Mohammed Highway, calabar     	1	
+13	2023-01-13	BH17	 16, Oshin Road, ijebu-ode                  	2	2023-01-14
+14	2023-10-02	BH12	 8, Uzoamaka Street, owerri              	3	2023-10-03
+15	2023-08-01	BH118	 7, Adelabu Street, ibadan              	2	2023-08-02
+								
+									
+									
+	order_items table				
+order_id	product_id	size_id	quantity	unit_price
+1	TP-001	2	2	2000
+1	TP-002	2	3	2500
+1	TP-006	1	1	1000
+2	TP-004	3	2	1500
+2	TP-005	2	1	2000
+2	BT-007	3	1	2000
+3	TP-003	2	4	3000
+3	TP-013	2	2	2500
+3	AC-003		1	2000
+4	TP-009	1	2	3000
+4	BT-003	2	1	4500
+4	BT-009	2	1	5000
+5	TP-012	2	3	2000
+5	BT-002	2	1	4000
+5	BT-006	3	2	1500
+5	AC-002	1	1	4500
+1	TP-001	1	2	2000
+1	TP-005	2	1	2000
+1	BT-006	3	2	1500
+2	TP-007	1	1	3500
+2	TP-013	2	3	2500
+2	AC-005	4	4	1000
+3	TP-012	5	2	2000
+3	TP-014	2	1	3000
+3	AC-003	3	3	2000
+4	TP-008	4	1	5000
+4	TP-009	5	2	3000
+4	BT-007	5	1	2000
+5	TP-003	1	1	3000
+5	TP-004	6	1	1500
+5	BT-001	4	2	3500
+6	BT-002	1	1	4000
+6	BT-003	2	2	4500
+6	BT-004	3	3	5000
+7	TP-010	4	1	4000
+7	TP-011	6	2	4500
+7	BT-009	2	1	5000
+8	AC-001	1	2	4000
+8	AC-002	2	1	4500
+8	AC-006	3	3	500
+9	AC-004	4	2	2500
+9	AC-005	4	1	1000
+9	BT-010	4	1	10000
+10	TP-006	1	2	1000
+10	AC-003	2	1	2000
+11	AC-004	3	1	2500
+11	AC-003		2	2000
+12	AC-003		1	2000
+13	TP-012	2	3	2000
+14	TP-011	1	2	4500
+14	BT-003	2	1	4500
+15	BT-009	3	1	5000
+								
+									
+		Order Status	
+Order_Status_id	Name
+1	Packed
+2	Shipped
+3	Delivered
+4	Walk in
+							
+									
+									
+	Products Table			
+product_id	product_name	unit_price	quantity_available
+ TP-001	Women's sleevless blouse	₦ 2000	50
+ TP-002	Women's long-sleeved blouse	₦2500	75
+ TP-003	Men's Dress Shirt	₦3000	100
+ TP-004	Men's Polo shirt	₦1500	80
+ TP-005	Men's Casual Shirt 	₦2000	120
+ TP-006	T-shirt	₦1000	150
+ TP-007	Womens Shirt dress	₦3500	60
+ TP-008	Women's Long skirt	₦5000	40
+ TP-009	Women's short skirt	₦3000	90
+ TP-010	Women's Dress Pants	₦4000	100
+ TP-011	Men's Kaftan	₦4500	70
+ TP-012	Men's Khaki Pants	₦2000	120
+ TP-013	Women's Jeans	₦2500	80
+ TP-014	Men's Jeans	₦3000	100
+BT-001	Men's Dress Slacks	₦3500	70
+BT-002	Women's gown mini	₦4000	50
+BT-003	Women's gown midi	₦4500	60
+BT-004	Women's gown maxi	₦5000	40
+BT-005	Men's Dress Shorts	₦2500	80
+BT-006	Men's leather belt	₦1500	90
+BT-007	Women's  belt	₦2000	70
+BT-008	Men's cufflinks	₦3000	50
+BT-009	Women's jackket	₦5000	60
+BT-010	Men's Suit jackket	₦10000	40
+AC-001	Men's Sweater	₦4000	80
+AC-002	Women's Sweater	₦4500	100
+AC-003	Women's Jewelry       	₦2000	120
+AC-004	Men's Jewelry       	₦2500	80
+AC-005	 Scarves       	₦1000	60
+AC-006	Socks	₦500	150
+
+
+	Product Sizes	
+Size_id	Size_name
+1	Small
+2	Medium
+3	Large
+4	Extra Large
+5	Extra Extra Large
+6	Extra Extra Extra Large
+							
+									
+Category Table			
+category_id	category_name 	category_description 	parent_category_id 
+1	 Tops          	 Shirts, blouses, sweaters, jackets 	 NULL               
+2	 Bottoms       	 Pants, jeans, skirts               	 NULL               
+3	Gowns	 Mini, midi, maxi                    	 NULL               
+4	 Accessories   	 Belts, scarves, hats, jewelry      	NULL
+5	 Shirts        	 Dress shirts, casual shirts        	1
+6	 Blouses       	 Sleeveless, short-sleeve, etc.     	1
+7	 Sweaters      	 Cardigans, pullovers, etc.         	1
+8	 Pants         	 Khakis, chinos, dress pants        	2
+9	 Jeans         	 Skinny, bootcut, straight leg      	2
+10	 Skirts        	Long, Short	2
+11	 Belts         	 Leather, fabric, woven             	4
+12	 Scarves       	 Silk, wool, cashmere               	4
+13	 Hats          	 Baseball caps, fedoras, etc.       	4
+14	 Jewelry       	 Necklaces, bracelets, earrings     	4
+									
+									
+		Employee Table										
+employee _id	First_name	Last_name	Email	Phone_number	Address	City	Date_of_Birth	Hire_Date	Title	Dept
+1	Chiamaka	Okonkwo	chiamaka.okonkwo@example.com	2348012345678	12 Abiola Way	Lagos	1992-07-16	2022-01-10	Sales Associate	Sales
+2	Ibrahim	Yusuf	ibrahim.yusuf@example.com	2348023456789	3B Fajuyi Street	Abuja	1988-02-20	2021-09-01	Store Manager	Operations
+3	Chinonso	Obi	chinonso.obi@example.com	2348034567890	7 Opebi Road	Lagos	1990-05-09	2022-03-15	Customer Service Representative	Customer Service
+4	Aisha	Aliyu	aisha.aliyu@example.com	2347045678901	22 Ahmadu Bello Way	Kano	1995-11-24	2022-02-02	Inventory Specialist	Inventory Management
+5	Tunde	Adesanya	tunde.adesanya@example.com	2347067890123	15 Onitsha Street	Ibadan	1993-09-18	2021-10-20	Visual Merchandiser	Marketing
+6	Nkechi	Nwosu	nkechi.nwosu@example.com	2347089012345	9 Abakaliki Road	Enugu	1991-06-30	2022-04-05	Sales Manager	Sales
+7	Yusuf	Ahmed	yusuf.ahmed@example.com	2348012345678	2 Katsina Road	Kaduna	1996-12-12	2021-11-15	Cashier	Finance
+8	Amaka	Eze	amaka.eze@example.com	2348098765432	17 Adekunle Fajuyi Road	Ibadan	1987-08-05	2022-03-01	Store Associate	Operations
+9	Dayo	Oladele	dayo.oladele@example.com	2348023456789	23 Olorunfunmi Street	Lagos	1994-03-12	2022-02-14	Sales Associate	Sales
+10	Idris	Bello	idris.bello@example.com	2347034567890	11 Yakubu Gowon Crescent	Abuja	1989-01-08	2021-12-01	Customer Service Representative	Customer Service
+							
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
